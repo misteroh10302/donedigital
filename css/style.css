@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.75px; }
+
+a {
+  color: black; }
+
+:-webkit-any(article, aside, nav, section) h1 {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
+
+@font-face {
+  font-family: sanSerif;
+  src: url(fonts/Avenir-Book.ttf) format("truetype"); }
+@font-face {
+  font-family: Serif;
+  src: url(fonts/aleo/Aleo/Aleo-Light.otf); }
+body {
+  font-family: sanSerif; }
+
+header {
+  height: 100px; }
+  header a {
+    color: black;
+    text-decoration: none; }
+  header a:hover {
+    letter-spacing: 2px;
+    color: #deb040; }
+  header #nav-left {
+    display: inline-block; }
+    header #nav-left h1 {
+      font-size: 3em;
+      text-transform: CamelCase; }
+    header #nav-left #names {
+      color: #0000ff; }
+  header #nav-right {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase;
+    font-size: 1.5em; }
+    header #nav-right ul li {
+      display: inline-block; }
+
+section {
+  min-height: 100vh;
+  margin: 3em; }
+  section h1 {
+    font-family: sanSerif; }
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 3em;
+  text-align: center;
+  color: #0000ff; }
+  main #mainText {
+    margin: 3em 0em 1em 0em; }
+
+aside {
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: background-color 0.5s linear;
+  background: linear-gradient(90deg, #0000ff 50%, #ffffff 50%);
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: .5px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #0000ff; }
+  aside .bigTitle {
+    text-transform: uppercase;
+    font-size: 7em;
+    text-align: center; }
+  aside #top {
+    position: relative;
+    top: 24px; }
+  aside #bottom {
+    position: absolute;
+    bottom: 24px;
+    left: 35%; }
+
+article {
+  transition-all: 2s;
+  margin: 2em; }
+  article h1 {
+    font-size: 1.5em; }
+  article h2 {
+    font-size: 1em; }
+    article h2 a {
+      color: #0000ff;
+      text-decoration: none; }
+    article h2 :hover {
+      color: #deb040; }
+  article .workinfo {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; }
+  article .imgbox {
+    width: 59%;
+    display: inline-block; }
+    article .imgbox img {
+      width: 100%;
+      outline: 2px solid black; }
+
+.section-header {
+  font-size: 2em;
+  font-family: Arial; }
+
+.about-info {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 2em;
+  text-align: center;
+  font-family: Sans Serif; }
+  .about-info p {
+    font-family: 'Bitter', serif; }
+
+footer {
+  text-align: center;
+  border-top: 1px solid black;
+  padding: 2em 0em 4em 0em; }
+
+#topSmiley {
+  text-align: center;
+  padding: 2em 0em; }
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2em; }
+  .bounce img {
+    width: 50px; }
+
+#topSmiley {
+  -webkit-animation: rotation 2s infinite linear; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+@media screen and (max-width: 768px) {
+  .bounce {
+    display: none; }
+
+  .desktop-nav {
+    display: none; }
+
+  .bigTitle {
+    text-transform: uppercase;
+    font-size: 5em;
+    text-align: center; }
+
+  article .workinfo {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top; }
+  article .imgbox {
+    width: 100%;
+    display: inline-block; }
+    article .imgbox img {
+      width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
